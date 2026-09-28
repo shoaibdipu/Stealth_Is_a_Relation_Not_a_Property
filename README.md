@@ -1,4 +1,4 @@
-# Code release: event retiming and consumer-relative stealth
+# Stealth Is a Relation, Not a Property: How Event Representations Create Blind Spots for Timing Attacks in Event-Based Perception | Code 
 
 This repository contains the code used for the experiments reported in the accompanying paper. It is organized by experiment family rather than by development version. Exploratory or superseded duplicate snapshots are omitted. Scientific logic, model definitions, attacks, metrics, random seeds, and experiment protocols are preserved; packaging-only edits remove site-specific paths, scheduler identity output, and duplicated frozen copies.
 
