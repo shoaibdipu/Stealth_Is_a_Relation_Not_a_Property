@@ -1,0 +1,21 @@
+# Core (all scripts)
+torch>=2.1,<2.9        # <2.9 required by the official PDSG-SDA indexing; see README
+numpy
+pandas
+matplotlib
+tqdm
+requests               # N-MNIST auto-download
+
+# Suite / dataset specific
+huggingface_hub        # DailyDVS-200 auto-download (01/dailydvs200)
+dv-processing          # DailyDVS-200 .aedat4 decoding (01/dailydvs200); `aedat` is the fallback backend
+h5py                   # SHD / SSC (01/shd_ssc)
+scikit-learn           # clean-only defense detectors (04)
+torchvision            # optional: only imported by the official Yao repo utilities (external comparison utility)
+wandb                  # optional: imported by the official Yao repo utilities; run with WANDB_MODE=disabled
+pytest                 # tests in 02/*/tests
+
+# External attack repositories are cloned at run time, not installed:
+#   https://github.com/yuyi-sd/Spike-Retiming-Attacks  (SPIKE_RETIMING_REPO)
+#   https://github.com/ryime/PDSG-SDA                   (PDSG_SDA_DIR)
+#   https://github.com/JY-ura/GumbelSoftmaxAttack       (YAO_DIR)
